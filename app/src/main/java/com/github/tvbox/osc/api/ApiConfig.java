@@ -79,7 +79,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://gitee.com/liugd1005/home-tvbox/raw/master/gg1005.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
